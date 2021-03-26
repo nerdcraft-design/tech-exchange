@@ -1,0 +1,28 @@
+{
+  "name": "tech-exchange",
+  "version": "1.0.0",
+  "description": "CMS-style tech blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ijacksondesign/tech-exchange.git"
+  },
+  "author": "Ian Jackson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ijacksondesign/tech-exchange/issues"
+  },
+  "homepage": "https://github.com/ijacksondesign/tech-exchange#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^8.2.0",
+    "express-handlebars": "^5.2.1",
+    "mysql2": "^2.2.5",
+    "randomstring": "^1.1.5",
+    "sequelize": "^6.6.2"
+  }
+}
