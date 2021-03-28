@@ -24,6 +24,7 @@
         <li>
           {{> post-info post}}
           <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+          <button type="button" class="btn-no-style delete-post-btn">Delete post</button>
         </li>
         {{/each}}
       </ol>
@@ -38,3 +39,4 @@
 
 
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/delete-post.js"></script>

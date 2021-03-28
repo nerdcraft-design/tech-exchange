@@ -12,6 +12,10 @@ body {
     background-color: #e4dede;
 }
 
+ul, ol {
+    list-style-type: none;
+}
+
 .wrapper {
     height: 100vh;
     display: flex;
@@ -27,7 +31,7 @@ header {
     padding: 10px 20px;
 }
 
-header a {
+a {
     text-decoration: none;
     color: #F2F2F2;
 }
@@ -38,11 +42,22 @@ header h1 {
     font-style: normal;
 }
 
+.btn-no-style {
+    background: none;
+    border: none;
+    color: #F2F2F2;
+    font-size: 16px;
+}
+
 .nav-btn {
     font-family: korolev, sans-serif;
     font-weight: 700;
     font-style: normal;
     margin: 0 10px;
+}
+
+.nav-btn:hover, .meta a:hover, a:hover, .delete-post-btn:hover {
+    color: #D9946C;
 }
 
 main {
@@ -138,6 +153,37 @@ section {
 
 .mouse {
     width: 60%;
+}
+
+.post {
+    margin: 10px auto;
+    border: 1px solid #2D2F59;
+}
+
+.title {
+    background-color: #2D2F59;
+    color: #F2F2F2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-text {
+    padding: 10px;
+}
+
+.meta a {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.comment {
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.edit-link, .delete-post-btn {
+    color: #2D2F59;
 }
 
 footer {
