@@ -17,12 +17,12 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        // define a post url column
-        post_url: {
+        // define a post text column
+        post_text: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                isURL: true
+                len: [1]
             }
         },
         // defines a user table and connects it to User.id

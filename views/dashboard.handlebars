@@ -1,31 +1,40 @@
-<section>
-  <h2>Create New Post</h2>
+<div class="page-wrapper">
+  <div class="post-wrapper">
+    <section>
+      <h2>Create New Post</h2>
 
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-      <label for="post-url">Link</label>
-      <input id="post-url" name="post-url" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
+      <form class="new-post-form">
+        <div>
+          <label for="post-title">Title</label>
+          <input type="text" id="post-title" name="post-title" />
+        </div>
+        <div>
+          <label for="post-text">Post Text</label>
+          <textarea id="post-text" name="post-text"></textarea>
+        </div>
+        <button type="submit" class="btn">Create</button>
+      </form>
+    </section>
 
-{{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
-  <ol>
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
-    {{/each}}
-  </ol>
-</section>
-{{/if}}
+    {{#if posts.length}}
+    <section>
+      <h2>Your Posts</h2>
+      <ol>
+        {{#each posts as |post|}}
+        <li>
+          {{> post-info post}}
+          <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+        </li>
+        {{/each}}
+      </ol>
+    </section>
+    {{/if}}
+  </div>
+
+  <div class="img-wrapper">
+    <img src="/assets/post-mouse.png" alt="Tech Mouse" class="mouse"/>
+  </div>
+</div>
+
 
 <script src="/javascript/add-post.js"></script>
