@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Exchange</title>
+  <link rel="stylesheet" href="https://use.typekit.net/gyp1wdx.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>
+                <a href="/">TECH EXCHANGE</a>
+            </h1>
+            <nav>
+                <a href="/" class="nav-btn">HOMEPAGE</a>
+                <a href="/dashboard" class="nav-btn">DASHBOARD</a>
+                {{#if loggedIn}}
+                    <button id="logout" class="btn-no-style nav-btn">LOGOUT</button>
+                {{else}}
+                    <a href="/login" class="nav-btn">LOGIN</a>
+                {{/if}}
+            </nav>
+        </header>
+
+        <main>
+            {{{ body }}}
+        </main>
+
+        <footer>
+            Thanks for visiting!
+        </footer>
+    </div>
+  
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
